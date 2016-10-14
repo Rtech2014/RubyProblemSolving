@@ -8,6 +8,9 @@ puts("********************* Student Information *********************")
 def student_info
   puts("How many students in your class ? ")
   students_number = gets.chomp.to_i
+  unless students_number.class != Fixnum
+    raise TypeError, 'Please enter a number'
+  end
   students = Array.new(students_number)
   for i in 0..students.length-1
     puts("Enter your name ? ")
