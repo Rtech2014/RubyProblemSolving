@@ -1,0 +1,2 @@
+class Datastruct
+end
